@@ -6,7 +6,7 @@ sudo apt-get install bc git
 # download raspbian kernel sources, takes some minutes
 sudo wget "https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source" -O /usr/bin/rpi-source
 sudo chmod 755 /usr/bin/rpi-source
-rpi-source
+rpi-source --skip-gcc
  
 # download the rtl8812au kernel driver and compile it, takes some minutes
 git clone "https://github.com/gnab/rtl8812au"
